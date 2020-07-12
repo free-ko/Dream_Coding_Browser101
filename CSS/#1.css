@@ -1,0 +1,25 @@
+/* 1. 의미 정의
+2. 선택자
+3. 스타일링
+4. 헷갈리는 컨셉
+5. CSS 꽃 : Flex box 
+
+
+1. Cascading(폭포처럼 흐르다) Style Sheet
+- Author style
+- User style 
+- Browser
+--> 위에서 아래로 진행됨 (단 이 흐름을 무시하는 효과가 바로 !important, 이렇게 적용해주면 먼저 스타일 적용 됨)
+
+2. Selectors
+- Universal : *
+- type : Tag
+- ID : #id
+- Class : .class
+- State : :
+- Attribute : []
+
+
+
+
+*/
