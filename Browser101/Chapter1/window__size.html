@@ -1,0 +1,73 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FREEKO | window__size</title>
+
+    <script>
+        const screenWidth = screen.width;
+        const screenHeight = screen.height;
+        const outerWidth = window.outerWidth;
+        const outerHeight = window.outerHeight;
+        const innerWidth = window.innerHeight;
+        const innerHeight = window.innerHeight;
+
+        document.getElementById('screen').innerHTML = 'Hello';
+    </script>
+</head>
+
+
+<body>
+    <h1 id="screen"></h1>
+    <h1 id="outer"></h1>
+    <h1 id="inner"></h1>
+    <h1 id="document"></h1>
+</body>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FREEKO | window__size</title>
+    <style>
+        .tag {
+            background-color: violet;
+            display: inline-block;
+            padding: 16px;
+            margin-top: 16px;
+            font-size: 48px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tag">Window Size</div>
+    <script>
+        const tag = document.querySelector('.tag');
+
+        function updateTag() {
+            tag.innerHTML = `
+                window.screen: ${window.screen.width}, ${window.screen.height} <br/>
+                window.screen: ${window.outerWidth}, ${window.outerHeight} <br/>
+                window.inner: ${window.innerWidth}, ${window.innerHeight} <br/>
+                documentElement.clientWidth: ${document.documentElement.clientWidth}, ${document.documentElement.clientHeight}
+            `;
+        }
+
+        window.addEventListener('resize', () => {
+            updateTag();
+        });
+
+        updateTag();
+    </script>
+</body>
+
+</html>
