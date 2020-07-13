@@ -32,5 +32,15 @@
 - Item : order, flex-grow, flex-shrink, flex, align-self
 - main axis | cross axis
 
+💛Responsible Web💛
+- Flex grid, flex box, %, vw, vh
+- Media Queries
+- Mobile(320px~480px) | table(768px~1024px) | desktop(1024px~)
+
+@media screen(speech,print,all) and(not,only,comma) (min-width: 800px) {
+    .container {
+        width: 50%;
+    }
+}
 
 */
