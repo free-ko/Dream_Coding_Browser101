@@ -8,7 +8,7 @@ const fieldRect = field.getBoundingClientRect(); // field 위치를 알 수 있�
 function initGame() {
     // 벌레와 당근을 생성한 뒤 field에 추가해 줌
     addItem('carrot', 5, 'img/carrot.png');
-    addItem('but', 5, 'img/bug.png');
+    addItem('bug', 5, 'img/bug.png');
 }
 
 function addItem(className, count, imgPath) {
