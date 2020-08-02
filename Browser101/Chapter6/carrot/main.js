@@ -13,7 +13,7 @@ const gameTimer = document.querySelector(".game__timer");
 const gameScore = document.querySelector(".game__score");
 
 const popUp = document.querySelector(".pop-up");
-const popUpText = document.querySelector(".pop-message");
+const popUpText = document.querySelector(".pop-up__message");
 const popUpRefresh = document.querySelector(".pop-up__refresh");
 
 let started = false;
@@ -80,6 +80,7 @@ function updateTimerText(time) {
 }
 
 function showPopUpWithText(text) {
+  console.log(text);
   popUpText.innerText = text;
   popUp.classList.remove("pop-up--hide");
 }
