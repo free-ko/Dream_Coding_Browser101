@@ -39,7 +39,6 @@ gameBtn.addEventListener("click", () => {
 popUpRefresh.addEventListener("click", () => {
   startGame();
   hidePopUp();
-  gameBtn.style.visibility = "visible";
 });
 
 function startGame() {
@@ -81,6 +80,7 @@ function showStopButton() {
   const icon = gameBtn.querySelector(".fas");
   icon.classList.add("fa-stop");
   icon.classList.remove("fa-play");
+  gameBtn.style.visibility = "visible";
 }
 
 function showTimerAndScore() {
