@@ -10,7 +10,7 @@ export default class Field {
         this.bugCount = bugCount;
         this.field = document.querySelector(".game__field");
         this.fieldRect = this.field.getBoundingClientRect();
-        this.field.addEventListener('click', this.onClick)
+        this.field.addEventListener('click', this.onClick);
     }
 
     init() {
@@ -43,7 +43,7 @@ export default class Field {
     }
 
 
-    onClick(event) {
+    onClick = event => {
         const target = event.target;
         if (target.matches(".carrot")) {
             target.remove();
@@ -52,7 +52,7 @@ export default class Field {
         } else if (target.matches(".bug")) {
             this.onItemClick && this.onItemClick('bug');
         }
-    }
+    };
 }
 
 function randomNumber(min, max) {
