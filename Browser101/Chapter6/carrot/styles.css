@@ -1,6 +1,11 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     text-align: center;
-    background-color: skyblue;
+    background: linear-gradient(#00B4DB, #0083B0) no-repeat;
 }
 
 button {
