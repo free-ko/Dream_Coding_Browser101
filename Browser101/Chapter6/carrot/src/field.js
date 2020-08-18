@@ -39,6 +39,7 @@ export class Field {
             item.setAttribute("class", className);
             item.setAttribute("src", imgPath);
             item.style.position = "absolute";
+            // Game item location setting
             const x = randomNumber(x1, x2);
             const y = randomNumber(y1, y2);
             item.style.left = `${x}px`;
